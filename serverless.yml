@@ -15,4 +15,4 @@ function:
         method: get
     
 plugins:
-  -serverless-offline
+  - serverless-offline
