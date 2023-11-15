@@ -29,7 +29,7 @@ jobs:
       - name: Run Installation of Dependencies Commands
         run: npm install
       - name: Install serverless
-        run: npm install serverless
+        run: npm install -g serverless
       - name: Run Serverless Deploy
         run: serverless deploy
       - name: Pause 3 minutes to verify creation
