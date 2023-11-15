@@ -1,0 +1,18 @@
+service: sturdy-disco
+frameWorkversion: 3
+
+provider: 
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+function:
+  api:
+    handler: index.handler #index comes from index.js, handler comes from modules.exports.handler in index.js
+    events:
+      - httpApi:
+        path: /
+        method: get
+    
+plugins:
+  -serverless-offline
